@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="weatherrisk.com.wrms.cce.Main2Activity">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/home_icom"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/shop"
+        android:title="Reports"
+        android:icon="@drawable/bottom_report"
+        app:showAsAction="always" />
+
+    <item
+        android:title=" "
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/help"
+        android:title="@string/help"
+        android:icon="@drawable/help_icon"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/profile"
+        android:title="@string/profile"
+        android:icon="@drawable/profile_icon"
+        app:showAsAction="always" />
+</menu>

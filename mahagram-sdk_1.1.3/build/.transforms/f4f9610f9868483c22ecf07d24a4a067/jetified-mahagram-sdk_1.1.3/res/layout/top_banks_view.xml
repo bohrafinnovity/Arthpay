@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:background="@drawable/circle_filled_white"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+
+    <ImageView
+        android:id="@+id/iv_topBanks"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/icon_bank"
+        android:layout_gravity="center"/>
+    </RelativeLayout>
+
+</RelativeLayout>

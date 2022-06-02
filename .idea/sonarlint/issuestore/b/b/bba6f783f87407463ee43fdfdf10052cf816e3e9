@@ -1,0 +1,45 @@
+
+m	java:S116,"XRename this field "operator_name" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù“«¦
+o	java:S116-"URename this field "provide_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”äáÈûÿÿÿÿ
+`
+java:S1659*"EDeclare "etAmount" and all following declarations on a separate line.(òËï›ûÿÿÿÿ
+^
+java:S1659-"CDeclare "amount" and all following declarations on a separate line.(”äáÈûÿÿÿÿ
+V	java:S1253"<This block of commented-out lines of code should be removed.(†æ­­ùÿÿÿÿ
+Y
+java:S1854p"CRemove this useless assignment to local variable "DRAWABLE_BOTTOM".(À³µê
+H
+java:S1481m"2Remove this unused "DRAWABLE_LEFT" local variable.(óÔîè
+L
+java:S1481n"1Remove this unused "DRAWABLE_TOP" local variable.(•¸ò‡ùÿÿÿÿ
+J
+java:S1481p"4Remove this unused "DRAWABLE_BOTTOM" local variable.(À³µê
+N
+java:S1135³"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ
+=	java:S131¶""Add a default case to this switch.(×ö³–úÿÿÿÿ
+E
+java:S1481»")Remove this unused "name" local variable.(Ÿ•ï‘ıÿÿÿÿ
+d
+java:S5361Á"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ãó’Àşÿÿÿÿ
+Q
+java:S1117Ï":Rename "amount" which hides the field declared at line 45.(õÓèÇ
+G
+java:S1172û"0Remove this unused method parameter "loaderMsg".(¸É»ÿ
+i	java:S100—"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ıË®øÿÿÿÿ
+E
+java:S1068)"*Remove this unused "imgKyc" private field.(âîè•ÿÿÿÿÿ
+D
+java:S1068+".Remove this unused "imgContact" private field.(•Ó®ä
+d
+java:S1192@"IDefine a constant instead of duplicating this literal "operator" 3 times.(”«á÷øÿÿÿÿ
+]
+java:S1192C"GDefine a constant instead of duplicating this literal "mobile" 3 times.(œûóú
+E
+java:S1066s"/Merge this if statement with the enclosing one.(È¾Âş
+g	java:S117Œ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÅŞŠÜ
+>
+java:S1604j"(Make this anonymous inner class a lambda(ª„õ•
+>
+java:S1604~"(Make this anonymous inner class a lambda(ãœ¢•
+?
+java:S1604Û"(Make this anonymous inner class a lambda(ÅÑÉÑ

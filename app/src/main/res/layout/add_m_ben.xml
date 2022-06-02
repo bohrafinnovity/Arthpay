@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="none">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/AppTheme.AppBarOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+        app:title="Add Benificiary"
+        app:titleTextColor="@color/white" />
+
+    <ScrollView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:visibility="visible"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etBank"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="10dp"
+                    android:padding="5dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/amiko"
+                    android:hint="Select Bank"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_bank_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText  android:padding="5dp"
+                        android:id="@+id/benemobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:digits="1234567890"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amiko"
+                        android:hint="Beneficiary Mobile"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText  android:padding="5dp"
+                        android:id="@+id/benename"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amiko"
+                        android:hint="Account holder name"
+                        android:inputType="text"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText  android:padding="5dp"
+                        android:id="@+id/beneaccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:digits="1234567890"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amiko"
+                        android:hint="Bank Account number"
+                        android:drawableEnd="@drawable/ic_verify"
+                        android:inputType="number"
+                        android:textSize="14sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:visibility="visible"
+                    app:errorEnabled="true">
+
+                    <com.google.android.material.textfield.TextInputEditText  android:padding="5dp"
+                        android:id="@+id/ifscCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/amiko"
+                        android:hint="Ifsc Code"
+                        android:inputType="text"
+                        android:textAllCaps="true"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/button_add_benificiary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/button_bg"
+                    android:text="Add beneficiary"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

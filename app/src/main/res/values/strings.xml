@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Arthpay</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="todo">TODO</string>
+    <string name="do_t_have_an_account">Do\'t have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="home">Home</string>
+    <string name="help">Help</string>
+    <string name="profile">Profile</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="loading_text">Please wait..</string>
+    <string name="rupee">₹</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="add_dialog">Add</string>
+    <string name="refund_alert">Please confirm operator, number and amount, wrong recharge will not reverse at any circumstances.</string>
+    <string name="enter_bill_number">Please enter the bill number</string>
+    <string name="invalid_partner">Invalid Provider</string>
+    <string name="enter_mobile_number">Please enter mobile number</string>
+    <string name="select_provider">Please select provider</string>
+    <string name="enter_biller_name">Please input biller name</string>
+    <string name="enter_bill_amount">Please input bill amount</string>
+    <string name="recharge_failed">Recharge Failed</string>
+    <string name="bill_fetched">Bill Details Fetched Successfully</string>
+    <string name="select_operator">Please Select Operator</string>
+    <string name="recharge_confirmation">Recharge Confirmation</string>
+    <string name="input_bill_amount">Please input bill amount</string>
+    <string name="amout_validation">Please input bill amount greater than 10</string>
+    <string name="confirm">Confirm</string>
+    <string name="select_bank_title">Select Bank</string>
+    <string name="select_provider_title">Select Provider</string>
+    <string name="main_balance">Main Balance</string>
+    <string name="aeps_balance">Aeps Balance</string>
+    <string name="amount">Amount</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="name">Name</string>
+    <string name="provider">Provider</string>
+    <string name="bill_number">Bill Number</string>
+    <string name="enter_a_valid_bill_no_it_can_be_seen_at_the_top_of_you_bill">Enter a valid bill no.It can be seen at the top of you bill.</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="enter_a_registred_contact_number">Enter a registred Contact Number</string>
+    <string name="registred_contact_number_id">Registred Contact Number/ID</string>
+    <string name="customer_name">Customer Name :</string>
+    <string name="customer_name_not_found">Customer name not found!</string>
+    <string name="due_date">Due Date :</string>
+    <string name="due_date_not_found">Due date not found!</string>
+    <string name="biller_name">Biller Name</string>
+    <string name="date">Date</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="verify">Verify</string>
+
+    <string name="errorLog">Something went wrong in app send error log</string>
+    <string name="validate">Validate</string>
+
+    <string name="mobile_recharge">Mobile Recharge</string>
+    <string name="dth">DTH</string>
+    <string name="electricity_bill">Electricity</string>
+    <string name="lpg_gas">LPG GAS</string>
+    <string name="landline_bills">Landlines</string>
+    <string name="broadband_bills">Broadband</string>
+    <string name="water_bills">Water</string>
+    <string name="loan_repayment">Loan Repayment</string>
+    <string name="life_insurance">Life Insurance</string>
+    <string name="fasttag">FASTag</string>
+    <string name="loan">Loan</string>
+    <string name="cable_tv">Cable TV</string>
+    <string name="education_fees">Education\nFees</string>
+    <string name="health_insurance">Health Insurance</string>
+    <string name="minciple_taxes">Municipal\nTaxes</string>
+    <string name="housing_society">Housing\nSociety</string>
+    <string name="general">General</string>
+    <string name="transaction_pending">Transaction Pending</string>
+    <string name="tran_success">Transaction Successful</string>
+    <string name="tran_failed">Transaction Failed</string>
+    <string name="share_pdf">Share PDF</string>
+    <string name="share_report">Share Report</string>
+    <string name="no_application">No Application are available in your device to this file content</string>
+    <string name="no_report">PDF Files are not available</string>
+    <string name="transaction_approved">Approved</string>
+    <string name="transaction_rejected">Rejected</string>
+    <string name="transaction">Transaction</string>
+    <string name="aeps_report">Aeps Report</string>
+    <string name="all_services">All Services</string>
+    <string name="aeps">AEPS</string>
+    <string name="go_to_wallet_section">Go To Wallet Section</string>
+    <string name="matm_balance">MATM Balance</string>
+    <string name="please_input_a_search_string">Please input a search string</string>
+    <string name="please_input_from_and_to_date">Please input from and to date</string>
+    <string name="all_reports">All Reports</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="postpaid">Postpaid</string>
+    <string name="matm_fund_request">Matm fund request</string>
+    <string name="aeps_fun_request">Aeps fund request</string>
+    <string name="forgot_your_password">Forget Password</string>
+    <string name="dmt">DMT</string>
+    <string name="text_print">Print</string>
+    <string name="text_share">Share</string>
+    <string name="text_generated_file_error">Someting went wrong</string>
+    <string name="notification">Notification</string>
+
+    <string-array name="shop_type">
+        <item>Shop Type</item>
+        <item>Kirana Shop</item>
+        <item>Mobile Shop</item>
+        <item>Copier Shop</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="qualification_type">
+        <item>Qualification Type</item>
+        <item>SSC</item>
+        <item>HSC</item>
+        <item>Graduate</item>
+        <item>Post Graduate</item>
+        <item>Diploma</item>
+    </string-array>
+
+    <string-array name="population">
+        <item>Select Population</item>
+        <item>0 to 2000</item>
+        <item>2000 to 5000</item>
+        <item>5000 to 10000</item>
+        <item>10000 to 50000</item>
+        <item>50000 to 100000</item>
+        <item>100000+</item>
+    </string-array>
+
+    <string-array name="location_type">
+        <item>Location Type</item>
+        <item>Rural</item>
+        <item>Urban</item>
+        <item>Metro Semi Urban</item>
+    </string-array>
+</resources>

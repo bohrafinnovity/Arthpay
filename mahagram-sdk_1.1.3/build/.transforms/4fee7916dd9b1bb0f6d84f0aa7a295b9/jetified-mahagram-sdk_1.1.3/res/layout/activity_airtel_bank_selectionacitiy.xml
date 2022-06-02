@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".aeps.AirtelBankSelectionacitiy">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topper"
+        android:layout_marginTop="1dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="@dimen/back_arrow_width"
+            android:layout_height="@dimen/back_arrow_height"
+            android:src="@drawable/icon_arrow"
+            android:id="@+id/backIcon"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linee"
+            android:id="@+id/crosss"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="22dp"
+            android:paddingBottom="22dp"
+            android:paddingLeft="14dp"
+            android:hint="Search Bank"
+            android:background="@color/white"
+            android:lines="1"
+            android:inputType="text"
+            android:id="@+id/filterEditTexts"
+            android:imeOptions="actionDone"
+            android:layout_toRightOf="@+id/backIcon"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/filterEditTexts"
+            android:background="@color/darkGreen2"
+            android:layout_marginTop="1dp"
+            android:id="@+id/linee"
+            android:visibility="invisible"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topper"
+        android:layout_marginTop="3dp"
+        android:overScrollMode="never"/>
+
+</RelativeLayout>

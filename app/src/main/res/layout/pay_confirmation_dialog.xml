@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8A000000">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white_card"
+        android:elevation="5dp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/_16sdp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerHorizontal="true"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/pigeon_wait" />
+
+            <RelativeLayout
+                android:id="@+id/rechDetails"
+                android:layout_below="@+id/anim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_color"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imgCard"
+                    android:layout_width="@dimen/_36sdp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    app:cardCornerRadius="@dimen/_17sdp"
+                    android:layout_centerVertical="true"
+                    app:cardElevation="@dimen/_1sdp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/imgProvider"
+                        android:layout_margin="2dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_bank"
+                        android:scaleType="centerInside"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tvMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="730915045"
+                    android:layout_toEndOf="@id/imgCard"
+                    android:textSize="@dimen/_16sdp"
+                    android:textColor="@color/textBlack"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/tvOperator"
+                    android:layout_below="@id/tvMobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Operator - idea"
+                    android:layout_toEndOf="@id/imgCard"
+                    android:textSize="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textBlack"
+                    android:layout_marginStart="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:id="@+id/imgEdit"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_edit"
+                    app:tint="@color/text_gray"
+                    android:scaleType="centerInside"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/lbl"
+                android:layout_below="@id/rechDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please confirm operator, number and amount, wrong recharge will not reverse at any circumstances."
+                android:fontFamily="@font/poppins_light"
+                android:layout_margin="@dimen/_10sdp"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/textBlack"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnConfirm"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/success_border_green"
+                    android:text="@string/confirm"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCancel"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:background="@drawable/success_border_green"
+                    android:text="@string/cancel"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

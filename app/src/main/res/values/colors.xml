@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e73879</color>
+    <color name="colorPrimaryTrans">#72e73879</color>
+    <color name="colorPrimaryDark">#e73879</color>
+    <color name="colorAccent">#e73879</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Gray">#EBEBEB</color>
+    <color name="GrayLight">#72F7F7F7</color>
+    <color name="black">#000000</color>
+
+    <color name="Gray_DarkGray">#2F4F4F</color>
+    <color name="red">#F44336</color>
+    <color name="green">#4CAF50</color>
+    <color name="orange">#3BBA1D</color>
+    <color name="matGreen">#00897B</color>
+    <color name="matYellow">#FFB300</color>
+    <color name="black_overlay">#000000</color>
+    <color name="txt_black">#000000</color>
+    <color name="sub_txt_hint">#793BBA1D</color>
+    <color name="viewline_color">#8e8e93</color>
+
+    <color name="white_card">#FFFFFF</color>
+    <color name="bg_color">#F5F5F5</color>
+    <color name="bg_color_light">#5BF5F5F5</color>
+    <color name="textWhite">#ffffff</color>
+    <color name="blue">#3F51B5</color>
+    <color name="textBlack">#000000</color>
+    <color name="textGray">#6E6E6E</color>
+    <color name="textHintGray">#E4AEAEAE</color>
+    <color name="imageWhite">#ffffff</color>
+    <color name="textSelector">#FFB540</color>
+    <color name="drop_shadow_color">#88333333</color>
+    <color name="imgGray">#393939</color>
+    <color name="textGreen">#4CAF50</color>
+    <color name="textRed">#F6392B</color>
+    <color name="textRedTrans">#36FFB540</color>
+    <color name="icon_bg_circle">#E7E6E6</color>
+    <color name="img_primary">#FFB540</color>
+    <color name="bottom_color_one">#93F9B9</color>
+    <color name="bottom_color_two">#1D976C</color>
+    <color name="yellow_button">#FFC107</color>
+    <color name="divider">#F5F5F5</color>
+    <color name="text_gray">#7b8994</color>
+    <color name="text_yellow">#FFC107</color>
+    <color name="bg_yellow">#FFC107</color>
+    <color name="trans_text_black">#222426</color>
+    <color name="view_gray">#ececec</color>
+    <color name="GRAY">#f5f5f5</color>
+    <color name="GrayOnlyPrimary">#EDEDED</color>
+    <color name="greenTrans">#564CAF50</color>
+    <color name="trans">#00AAAAAA</color>
+    <color name="textGrayBoth">#6E6E6E</color>
+</resources>

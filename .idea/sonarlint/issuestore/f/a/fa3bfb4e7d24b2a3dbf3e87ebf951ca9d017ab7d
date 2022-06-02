@@ -1,0 +1,30 @@
+
+k
+java:S14500"VRemove the "context" field and declare it as a local variable in the relevant methods.(êİç
+u
+java:S1450-"ZRemove the "frameLayout" field and declare it as a local variable in the relevant methods.(Éàú–úÿÿÿÿ
+<	java:S1314""Add a default case to this switch.(øå´¡ÿÿÿÿÿ
+Q
+java:S2696Q"6Make the enclosing method "static" or remove this set.(áÀÿ›şÿÿÿÿ
+h
+java:S3776y"RRefactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.(¯ÜÑñ
+@
+java:S1197y"*Move the array designators [] to the type.(¯ÜÑñ
+Q
+java:S1481z";Remove this unused "isAllPermissionGranted" local variable.(€’Â’
+W	java:S125Ç"<This block of commented-out lines of code should be removed.(–“Åıÿÿÿÿ
+=	java:S131Ü""Add a default case to this switch.(åãâùÿÿÿÿ
+J
+java:S1068-"/Remove this unused "frameLayout" private field.(Éàú–úÿÿÿÿ
+@
+java:S10680"+Remove this unused "context" private field.(êİç
+F
+java:S1066"/Merge this if statement with the enclosing one.(–¼º
+F
+java:S1066‚"/Merge this if statement with the enclosing one.(¨»é¤
+?
+java:S1604"(Make this anonymous inner class a lambda(Î¬¯”
+f
+java:S1301{"KReplace this "switch" statement by "if" statements to increase readability.(×ö³–úÿÿÿÿ
+T
+java:S1155q">Use isEmpty() to check whether the collection is empty or not.(ßÄ…

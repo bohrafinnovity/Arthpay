@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="balance_h1">14sp</dimen>
+    <dimen name="profile_h2">16sp</dimen>
+    <dimen name="profile_h3">12sp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="et_height">36dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="@color/bg_color"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvLabel"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:text="Pancard"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingLeft="10dp"
+            android:textAllCaps="true"/>
+
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_below="@id/tvLabel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imgAttach"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:src="@drawable/ic_attach_button"
+            android:text="Attach"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/colorPrimary"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

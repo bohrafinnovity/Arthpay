@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="?attr/selectableItemBackground"
+        android:src="@drawable/close_icon"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        
+        android:gravity="left"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/please_input_a_search_string"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginEnd="@dimen/_80sdp"
+        android:background="@drawable/ractanle_semi_black"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00AAAAAA"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/_5sdp"
+            
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="@dimen/_10sdp"
+            android:textColor="@color/textWhite"
+            android:textColorHint="@color/textWhite"
+            android:textSize="@dimen/_10sdp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="@string/please_input_from_and_to_date"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_weight="1"
+            android:background="@drawable/ractanle_semi_black"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFromDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00E1E1E1"
+                android:drawablePadding="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:hint="From"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/textWhite"
+                android:textColorHint="@color/textWhite"
+                android:textSize="@dimen/_10sdp"
+                android:drawableStart="@drawable/ic_calender" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+
+            android:layout_height="@dimen/_28sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/ractanle_semi_black"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvToDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00AAAAAA"
+                android:drawableStart="@drawable/ic_calender"
+                android:drawablePadding="@dimen/_5sdp"
+                
+                android:gravity="center_vertical"
+                android:hint="To"
+                android:paddingStart="@dimen/_10sdp"
+                android:textColor="@color/textWhite"
+                android:textColorHint="@color/textWhite"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_14sdp"
+        
+        android:gravity="left"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:text="Please selct one status from below list"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:background="@drawable/round_white_bg"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexWrap="wrap">
+
+            <RadioButton
+                android:id="@+id/rbSuccess"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:buttonTint="@color/white"
+                android:checked="true"
+                
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="Success"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:buttonTint="@color/white"
+                
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="Pending"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbFailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:buttonTint="@color/white"
+                
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="Failed"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:buttonTint="@color/white"
+                
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="Accept"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbReversed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:buttonTint="@color/white"
+                
+                android:includeFontPadding="false"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="Reversed"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/rbRefunded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:buttonTint="@color/white"
+                
+                android:includeFontPadding="false"
+                android:paddingEnd="@dimen/_10sdp"
+                android:text="Refunded"
+                android:textColor="@color/white" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/filterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_14sdp"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:layout_marginRight="@dimen/_14sdp"
+        android:background="@drawable/round_white_bg"
+        
+        android:text="Apply Filter"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/_10sdp" />
+</LinearLayout>

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".on_boarding.OnBoardingActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:title="BC Registration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/bcContainer"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scrollbars="none"
+        android:paddingBottom="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/fNmaeTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <EditText
+                android:id="@+id/fNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fNmaeTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/mNameTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Middle Name"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fNameEt"
+                />
+
+            <EditText
+                android:id="@+id/mNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mNameTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/lNameTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Last Name"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mNameEt"
+                />
+
+            <EditText
+                android:id="@+id/lNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lNameTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/emailTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="E-mail"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lNameEt"
+                />
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="textEmailAddress"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/phoneOneTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Phone 1"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/emailEt"
+                />
+
+            <EditText
+                android:id="@+id/phoneOneEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneOneTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/phoneTwoTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Phone 2"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneOneEt"
+                />
+
+            <EditText
+                android:id="@+id/phoneTwoEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:maxLength="10"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneTwoTxt" />
+
+            <TextView
+                android:id="@+id/dobTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Date Of Birth"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/phoneTwoEt"
+                />
+
+            <TextView
+                android:id="@+id/dobEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dobTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/stateTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="State"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/dobEt"
+                />
+
+            <TextView
+                android:id="@+id/stateEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="none"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stateTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/districtTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="District"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/stateEt"
+                />
+
+            <TextView
+                android:id="@+id/districtEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="none"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/districtTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/addressTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Address"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/districtEt"
+                />
+
+            <EditText
+                android:id="@+id/addressEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addressTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/blockTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Block"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addressEt"
+                />
+
+            <EditText
+                android:id="@+id/blockEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blockTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/cityTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="City"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/blockEt"
+                />
+
+            <EditText
+                android:id="@+id/cityEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cityTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/landmarkTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Landmark"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cityEt"
+                />
+
+            <EditText
+                android:id="@+id/landmarkEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/landmarkTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/mohhallaTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Mohhalla"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/landmarkEt"
+                />
+
+            <EditText
+                android:id="@+id/mohallaEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mohhallaTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/locTypeTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Location Type"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mohallaEt"
+                />
+
+            <Spinner
+                android:id="@+id/locTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:entries="@array/location_type"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/locTypeTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/locTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Location"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/locTypeSpinner"
+                />
+
+            <EditText
+                android:id="@+id/locEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/locTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/pincodeTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Pincode"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/locEt"
+                />
+
+            <EditText
+                android:id="@+id/pincodeEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pincodeTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/panTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Pan No."
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pincodeEt"
+                />
+
+            <EditText
+                android:id="@+id/panEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/panTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/shopTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Shop Name"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/panEt"
+                />
+
+            <EditText
+                android:id="@+id/shopNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shopTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/shopTypeTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Shop Type"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shopNameEt"
+                />
+
+            <Spinner
+                android:id="@+id/shopTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:entries="@array/shop_type"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shopTypeTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/qualificationTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Qualification"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shopTypeSpinner"
+                />
+
+            <Spinner
+                android:id="@+id/qualificationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:entries="@array/qualification_type"
+                android:layout_marginTop="2dp"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/qualificationTxt"
+                tools:ignore="RtlSymmetry" />
+
+
+            <TextView
+                android:id="@+id/populationTxt"
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Population"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/qualificationSpinner"
+                />
+
+            <Spinner
+                android:id="@+id/populationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:layout_marginTop="2dp"
+                android:entries="@array/population"
+                android:paddingStart="@dimen/_8sdp"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/populationTxt"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:background="@drawable/button_bg"
+                android:layout_marginTop="@dimen/_13sdp"
+                app:layout_constraintEnd_toEndOf="@id/panEt"
+                app:layout_constraintTop_toBottomOf="@id/populationSpinner"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:title="Signup" />
+
+    <ScrollView
+        android:layout_above="@id/btnContainer"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="text"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile" />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etMobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="numberDecimal"
+                android:digits="1234567890"
+                android:maxLength="10"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="textEmailAddress"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ShopName" />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etShop"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="text"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pancard"
+              android:visibility="visible"/>
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etPan"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="text"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aadhar Card" />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etAadhar"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="numberDecimal"
+                android:digits="1234567890"
+                android:maxLength="12"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State" />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etState"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="text"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City" />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="text"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address" />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="text"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pincode" />
+
+             <EditText
+                android:layout_marginTop="2dp"
+                android:id="@+id/etPincode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="numberDecimal"
+                android:digits="1234567890"
+                android:maxLength="6"
+                android:gravity="center_vertical"/>
+
+          <TextView
+                android:fontFamily="@font/open_sans"
+                android:layout_marginTop="@dimen/dp10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Slug" />
+
+            <Spinner
+                android:id="@+id/spnrSlug"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/sign_edit_bg"
+                android:textSize="14sp"
+                android:paddingStart="10sp"
+                android:inputType="text"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DDDDDD">
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/amiko_bold"
+            android:textSize="16sp"
+            android:layout_margin="@dimen/dp10"/>
+    </LinearLayout>
+
+</RelativeLayout>

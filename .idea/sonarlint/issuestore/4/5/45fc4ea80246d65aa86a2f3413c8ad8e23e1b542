@@ -1,0 +1,137 @@
+
+h	java:S116H"SRename this field "DELAY_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ…÷Š
+i	java:S116I"TRename this field "PERIOD_MS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºõçš
+g	java:S116W"RRename this field "user_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¡Ü
+q	java:S116X"WRename this field "REQUEST_TYPE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Şß‘ÿÿÿÿÿ
+r	java:S116\"^Rename this field "offer_pager_adapter" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸éY
+7
+java:S1170H"!Make this final field static too.(Ÿ…÷Š
+7
+java:S1170I"!Make this final field static too.(ºõçš
+œ
+java:S1186j"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(É°êáúÿÿÿÿ
+^
+java:S1659Q"CDeclare "tvName" and all following declarations on a separate line.(ÕÆö¸ûÿÿÿÿ
+=
+java:S1659S"'Declare "secondCon" on a separate line.(¦¹Íû
+`
+java:S1659U"KDeclare "menuBillReport" and all following declarations on a separate line.(šå¿e
+u
+java:S1450["ZRemove the "bannerAvail" field and declare it as a local variable in the relevant methods.(î¨¾€üÿÿÿÿ
+q
+java:S1450Y"VRemove the "banners" field and declare it as a local variable in the relevant methods.(Ë¡œ„øÿÿÿÿ
+n
+java:S1450Z"XRemove the "drawables" field and declare it as a local variable in the relevant methods.(Ô×Ùû
+r
+java:S1450U"]Remove the "menuAepsReport" field and declare it as a local variable in the relevant methods.(šå¿e
+q
+java:S1450U"\Remove the "menuAllReport" field and declare it as a local variable in the relevant methods.(šå¿e
+r
+java:S1450U"]Remove the "menuBillReport" field and declare it as a local variable in the relevant methods.(šå¿e
+v
+java:S1450U"aRemove the "menuRechargeReport" field and declare it as a local variable in the relevant methods.(šå¿e
+V	java:S125R"<This block of commented-out lines of code should be removed.(¯ñœ†şÿÿÿÿ
+V	java:S125R"<This block of commented-out lines of code should be removed.(¯ñœ†şÿÿÿÿ
+Q	java:S125a"<This block of commented-out lines of code should be removed.(ğÏ°
+V	java:S125z"<This block of commented-out lines of code should be removed.(±ĞÙÇøÿÿÿÿ
+R	java:S125ƒ"<This block of commented-out lines of code should be removed.(Ï²“ñ
+?
+java:S1185‰"(Remove this method to simply inherit it.(ßìê¯
+R	java:S125ê"<This block of commented-out lines of code should be removed.(¯®‹˜
+R	java:S125¨"<This block of commented-out lines of code should be removed.(“­ùØ
+W	java:S125Ñ"<This block of commented-out lines of code should be removed.(ËÊêåıÿÿÿÿ
+Q	java:S125Ú"<This block of commented-out lines of code should be removed.(ØìÁ,
+R	java:S125ä"<This block of commented-out lines of code should be removed.(£¢ÖŠ
+G
+java:S1172©"0Remove this unused method parameter "loaderMsg".(¸É»ÿ
+B
+java:S1172º"+Remove this unused method parameter "cpid".(½úì¬
+i
+java:S3776à"RRefactor this method to reduce its Cognitive Complexity from 30 to the 15 allowed.(¶áğü
+W	java:S125"<This block of commented-out lines of code should be removed.(‰ÂÁÑÿÿÿÿÿ
+n
+java:S3776¤"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(™­²©ùÿÿÿÿ
+W
+java:S1117³"@Rename "clientrefid" which hides the field declared at line 478.(‰Œ»ë
+W
+java:S1117Ç"@Rename "clientrefid" which hides the field declared at line 478.(‰Œ»ë
+?	java:S108ğ")Either remove or fill this block of code.(”ı¾
+—
+java:S1186¤"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¼­‚
+
+java:S1186¦"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(àñ›øÿÿÿÿ
+E
+java:S1068Q"*Remove this unused "tvName" private field.(ÕÆö¸ûÿÿÿÿ
+G
+java:S1068Q",Remove this unused "tvNumber" private field.(ÕÆö¸ûÿÿÿÿ
+H
+java:S1068Q"-Remove this unused "tvAccount" private field.(ÕÆö¸ûÿÿÿÿ
+E
+java:S1068Q"*Remove this unused "tvBank" private field.(ÕÆö¸ûÿÿÿÿ
+E
+java:S1068Q"*Remove this unused "tvIFSC" private field.(ÕÆö¸ûÿÿÿÿ
+Q
+java:S1068T"6Remove this unused "offerSliderAdapter" private field.(’¸ı¸ûÿÿÿÿ
+J
+java:S1068["/Remove this unused "bannerAvail" private field.(î¨¾€üÿÿÿÿ
+L
+java:S1068\"7Remove this unused "offer_pager_adapter" private field.(Ò¸éY
+E
+java:S1068]"/Remove this unused "currentPage" private field.(çÂ€®
+u
+java:S2293Ï"YReplace the type specification in this constructor call with the diamond operator ("<>").(ñ Äúÿÿÿÿ
+g
+java:S1192¢"KDefine a constant instead of duplicating this literal "available" 12 times.(ìøşıÿÿÿÿ
+g
+java:S1192¨"KDefine a constant instead of duplicating this literal "StatusCode" 3 times.(†“‡Æüÿÿÿÿ
+g
+java:S1192Õ"KDefine a constant instead of duplicating this literal "statuscode" 7 times.(”çß§şÿÿÿÿ
+f
+java:S1192Í"JDefine a constant instead of duplicating this literal "descInput" 6 times.(ÛŞØÆÿÿÿÿÿ
+c
+java:S1192Ç"LDefine a constant instead of duplicating this literal "clientrefid" 4 times.(¯Ö„Š
+d
+java:S1192¨"HDefine a constant instead of duplicating this literal "Message" 3 times.(†“‡Æüÿÿÿÿ
+]
+java:S1192Ê"FDefine a constant instead of duplicating this literal "title" 6 times.(’æÃ
+f
+java:S1192Ú"JDefine a constant instead of duplicating this literal "
+Message " 3 times.(¨šÉãûÿÿÿÿ
+o
+java:S1192½"SDefine a constant instead of duplicating this literal "org.egram.microatm" 3 times.(ºÔ¹èøÿÿÿÿ
+e
+java:S1192È"IDefine a constant instead of duplicating this literal "vendorid" 3 times.(¡ÏİØúÿÿÿÿ
+d
+java:S1192Ú"HDefine a constant instead of duplicating this literal "Status " 4 times.(¨šÉãûÿÿÿÿ
+d
+java:S1192Ö"HDefine a constant instead of duplicating this literal "message" 5 times.(€‡Ğùÿÿÿÿ
+Q
+java:S1141²"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141Û"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141Ô"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141ã"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+W	java:S107¹"<Method has 8 parameters, which is greater than 7 authorized.(áÖÕ‡şÿÿÿÿ
+g	java:S117®"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜¹“Ê
+g	java:S117Ø"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜¹“Ê
+f	java:S117ˆ"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†øÔ@
+l	java:S117ç"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢â—ùÿÿÿÿ
+l	java:S117è"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¶©Àûûÿÿÿÿ
+g	java:S117ê"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ô€õ
+f	java:S117¤"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼­‚
+D
+java:S1604•"(Make this anonymous inner class a lambda(ÄÏŸúÿÿÿÿ
+T
+java:S1155`">Use isEmpty() to check whether the collection is empty or not.(İ’¶¢
+U
+java:S1155ğ">Use isEmpty() to check whether the collection is empty or not.(İ’¶¢
+Y
+java:S2259¬"BA "NullPointerException" could be thrown; "data" is nullable here.(“øÊÛ
+^
+java:S2259¨"BA "NullPointerException" could be thrown; "data" is nullable here.(†“‡Æüÿÿÿÿ
+^
+java:S2259Õ"BA "NullPointerException" could be thrown; "data" is nullable here.(”çß§şÿÿÿÿ
+Y
+java:S2259ä"BA "NullPointerException" could be thrown; "data" is nullable here.(ûç£ï

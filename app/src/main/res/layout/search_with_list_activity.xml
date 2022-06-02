@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+    <RelativeLayout
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/white_card"
+        android:paddingTop="@dimen/_5sdp"
+        android:visibility="visible"
+        android:paddingStart="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/icBack"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:src="@drawable/ic_left_arrow_new"
+            app:tint="@color/textBlack"
+            android:visibility="visible"
+            android:paddingEnd="@dimen/_16sdp"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@id/icBack"
+            android:background="@drawable/round_gray_bg"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/textGray"
+            android:textColorHint="@color/textHintGray"
+            android:textSize="14sp"
+            android:typeface="monospace"
+            app:drawableStartCompat="@drawable/ic_search" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dropDiv"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/topView"
+        android:background="@color/Gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dropDiv"
+        android:layout_margin="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:paddingTop="@dimen/_3sdp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="true"
+            android:isScrollContainer="false"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/loader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55sdp"
+            android:padding="@dimen/_5sdp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/noData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_card"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tvMsg"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/record_not_available" />
+
+            <TextView
+                android:id="@+id/tvMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins_light"
+                android:padding="@dimen/_5sdp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

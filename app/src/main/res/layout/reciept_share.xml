@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryTrans">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imgCrossFinish"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/cross_icon"
+                android:tint="@color/black"/>
+
+            <TextView
+                android:id="@+id/imgTransactionType"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="@font/open_sans_bold"
+                android:textSize="18sp"
+                />
+            <ImageView
+                android:id="@+id/imgShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_share"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+            <View
+                android:id="@+id/zigzagtop"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/zig_zag_top"/>
+            <LinearLayout
+
+                android:id="@+id/mainInvoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zigzagtop"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/app_logo"
+                        android:layout_centerHorizontal="true"/>
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/imgPrint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_print"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"/>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:paddingRight="5dp"
+                    android:id="@+id/layout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName1"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue1"
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName2"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue2"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName3"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue3"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName4"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue4"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName5"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue5"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName6"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue6"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName7"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue7"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName8"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue8"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName9"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue9"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName10"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue10"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName11"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue11"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName12"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue12"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName13"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue13"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName14"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue14"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:paddingRight="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/layout15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:id="@+id/tvFieldName15"
+                            android:textColor="#232635"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tvFieldValue15"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/open_sans_semibold"
+                            android:padding="5dp"
+                            android:textAllCaps="true"
+                            android:text="897"
+                            android:gravity="right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="end"
+                            android:textSize="12sp"
+                            android:textColor="#DB232635"
+                            />
+
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorPrimary"
+                        />
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@drawable/zig_zag_bottom"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Airtel_constent_string">मैं महाग्राम भुगतान के लिए एक बीसी एजेंट के रूप में एईपीएस सेवाओं का लाभ उठाने के लिए अपने आधार का उपयोग करने के लिए सहमत हूं। एयरटेल पेमेंट्स बैंक ने मुझे सूचित किया है कि मेरा आधार नंबर एयरटेल पेमेंट्स बैंक में संग्रहीत किया जाएगा और एईपीएस सेवाओं के लिए लॉगिन प्रमाणीकरण के लिए उपयोग किया जाएगा। महाग्राम भुगतान और एयरटेल भुगतान बैंक ने मुझे सूचित किया है कि मेरा बायोमेट्रिक्स स्टोर नहीं किया जाएगा”</string>
+    <string name="ConsentKyc">पूर्वोक्त उद्देश्य के लिए मैं एतद्द्वारा राज्य &amp; वचन देता हूं कि मुझे कोई आपत्ति नहीं है और एतद्द्वारा स्वेच्छा से अपने विवेक से सहमति देता हूं और केवाईसी प्रक्रिया को पूरा करने के लिए मेरे आधार विवरण का उपयोग करने के लिए बैंक को अधिकृत करता हूं।</string>
+    <string name="Rs">\u20B9</string>
+    <string name="aadhardetails">कृपया अपना\nआधार कार्ड विवरण दें</string>
+    <string name="aadharnoenter">आधार कार्ड नंबर दर्ज करें।</string>
+    <string name="aepsbridge">हम कभी भी आपके आधार नंबर को किसी भी रूप में स्टोर नहीं करते हैं और न ही हम आधार या खाते से संबंधित विवरण किसी को भी साझा करते हैं। आरबीआई के दिशानिर्देशों बीसी के तहत हमें एईपीएस ब्रिज के माध्यम से आपके बैंकिंग लेनदेन को पूरा करने के लिए आपके आधार नंबर पर कब्जा करने की अनुमति है।</string>
+    <string name="app_name">एप्सलिब</string>
+    <string name="consent_string">मैं स्वेच्छा से अपना आधार जमा करता हूं और इक्विटास स्मॉल फाइनेंस बैंक को यूआईडीएआई और amp के साथ प्रमाणीकरण के लिए अपने आधार नंबर / बायोमेट्रिक्स का उपयोग करने के लिए इलेक्ट्रॉनिक सहमति और प्राधिकरण देता हूं; यूआईडीएआई से मेरा ई-केवाईसी विवरण डाउनलोड करें</string>
+    <string name="flash_text_1">आपकी एप्स स्थिति अंतिम\nस्वीकृति के लिए लंबित है!</string>
+    <string name="flash_text_2">अगर आपको सहायता की आवश्यकता है तो कृपया \nसहायता टीम से संपर्क करें, जिसे मदद करने में खुशी होगी।</string>
+    <string name="icici_consentString">मैं एतद्द्वारा पुष्टि करता हूं कि सरकार द्वारा दी गई प्रत्यक्ष लाभ अंतरण (डीबीटी)/सब्सिडी मुझे बैंक खाते में प्राप्त हुई है। मैं अपने खाते/खातों से पैसे निकालने के लिए और अपने खाते के तहत शेष राशि की जांच के लिए बैंकों के व्यापार प्रतिनिधियों के माध्यम से लेनदेन करता हूं। मैं एईपीएस के माध्यम से उपरोक्त उद्देश्यों के लिए यूआईडीएआई के साथ अपने आधार नंबर/बायोमेट्रिक्स का उपयोग करके प्रमाणीकरण उद्देश्य के लिए स्वेच्छा से आपको अपना आधार विवरण जमा कर रहा हूं।</string>
+    <string name="kotak_consentString">Service: AEPS\n
+Customer Clause:\n
+a.	I, the Customer, hereby authorize Kotak Mahindra Bank Limited (“Bank”) to obtain and store my Aadhaar number, name and biometrics to fetch, authenticate and store all such necessary details retrieved or to be retrieved from Unique Identification Authority of India (“UIDAI”) for the purpose of this transaction through Aadhaar enabled payment system (“AEPS”). In case of any discrepancies, the Bank reserves the sole right to block my account (if the same is with the Bank) and transaction without any further notice or intimation.\n
+b.  Customer hereby states and undertake that it has no objection, if the information disclosed to the Bank is authenticated vide Aadhaar based system. Customer hereby voluntarily agrees and confirms to provide or disclose (as required under the Aadhaar Act 2016 and regulations framed there under, as amended from time to time) his/her identification information i.e. Aadhaar number, biometric information and demographic information for Aadhaar based authentication system and/or such similar authentication mechanism as provided or stipulated by the Government, from time to time, for the purpose of availing banking services, including operations of account or any other facility relating to banking operations.\n
+c.  The Customer hereby agrees and confirms that the Bank will not be obliged to process any request/transaction made by him/her, if:\n
+i.	Aadhaar number provided by the Customer is incorrect.\n
+ii.	 Details in account does not match with details available with UIDAI.\n
+iii. Authentication from UIDAI cannot be completed for any reason whatsoever.\n
+iv.	 Failure or malfunction of any telecommunication and information technology.\n
+v.	 Decline or timeout of the transaction.\n
+d.  The Customer hereby agrees and confirms that his/her account may be used for receiving any government payments across schemes that the Customer is eligible and/ or any other payment using the Aadhaar based information.\n
+e.  The Customer hereby confirms that the Aadhaar detail provided by the Customer is true, correct and complete in all aspect.\n
+g.  The Customer hereby acknowledges that the Bank will not have any liability or responsibility, if the details provided by the Customer is or subsequently becomes false, incorrect or incomplete, either in part or as a whole.\n
+h.  Before agreeing to the above-mentioned terms and conditions, the Customer have been explained (in a language known to the Customer) about the nature of information that may be shared upon authentication and have understood the nature and implication of the same, as stipulated under the applicable law. The Customer declares that all the information has been voluntarily furnished by them to the Bank, without any duress or coercion.\n
+i.  The Customer hereby gives consent to the Bank to use/exchange or share their Aadhaar number, Aadhaar information for registration of client information with Exchange, KRA, CERSAI and with any other regulatory or statutory authorities or as the Bank deems fit or as per requirements of law.\n
+j.  The Customer hereby understands and agrees that all the information provided by the Customer to the BC and the Bank will only be used for the purpose of the transaction through AEPS, or as per requirements of law.\n
+k.  The Customer hereby understands and agrees that Bank may disclose the identity information provided by the Customer to only UIDAI Central Identities Data Repository (“CIDR”) through NPCI for the purpose of authentication or authorization and in order to receive a Yes/No response for the authentication request.\n
+I.  The Customer hereby understands that Aadhaar Number is necessary to perform AEPS transaction and he/she may visit any bank to avail any other banking services.\n
+J.  The Customer hereby understands and agrees that the biometric authentication may be treated as his/her signature.\n
+K.  The Customer hereby declares that the above information has been provided voluntarily out of his/her own discretion and volition. All information provided by the Customer or information/date retrieved from UIDAI in respect of the Customer is true, correct, updated and complete.\n
+\n
+Agent Clause:\n
+a.  I hereby confirm that the Customer has been explained (in a language know to the Customer) about the nature of information, sharing of such information upon authentication, aspects of the transaction and the terms and conditions applicable to this transaction and the Customer has understood and authorized Kotak Mahindra Bank Ltd to fetch applicable data from UIDAI;\n
+b.  I hereby confirm that the Customer has provided all the information voluntarily to the Bank and are true, correct and complete.\n
+
+    </string>
+    <string name="makuesureaadha">सुनिश्चित करें कि आपका आधार बैंक खाते से जुड़ा हुआ है।</string>
+    <string name="o_no_np_ns">O\nO\nP\nS!</string>
+    <string name="otp_message">आपके मोबाइल नंबर पर आपको ओटीपी भेजा गया है। कृपया इसे नीचे दर्ज करें।</string>
+    <string name="scan">स्कैन करें और सत्यापित करें</string>
+    <string name="selectbank">अपने बैंक खाते का चयन करें।</string>
+    <string name="something_went_wrong">कुछ\nगलत हो गया</string>
+    <string name="spinnerBank">बैंक</string>
+    <string name="spinnerDevice">युक्ति</string>
+    <string name="withdrawamount">निकासी राशि दर्ज करें।</string>
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/ii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/norecordfound"
+        android:layout_marginTop="-40dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/NoDataFound">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/o_no_np_ns"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#d4603c"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/something_went_wrong"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#d4603c"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6F848A"
+        android:textSize="10sp"
+        android:text="cghvcvc"
+        android:id="@+id/Reason"/>
+
+</LinearLayout>

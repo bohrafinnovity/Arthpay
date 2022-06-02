@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:orientation="vertical"
+        android:background="@drawable/border_bg"
+        >
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8.5"
+                android:layout_height="wrap_content"
+                android:text="OTP Login"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:fontFamily="@font/amiko_semibold"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:src="@drawable/flash_close_icon"
+                android:layout_height="36dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/top"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#48C2F4C3"
+            android:paddingStart="@dimen/text_size16"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="@dimen/text_size16"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Please enter your old otp"
+            android:textColor="@color/green" />
+
+        <EditText
+        android:id="@+id/otp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMsg"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:maxLength="8"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:fontFamily="@font/amiko_bold"
+        android:textColor="@color/Gray_DarkGray"
+        android:digits="1234567890"/>
+
+        <Button
+            android:id="@+id/btnResend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/amiko_bold"
+            android:textColor="@color/white"
+            android:text="Resend Otp"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/otp_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="Submit"
+            android:textSize="14sp"
+            android:fontFamily="@font/amiko_bold"
+            android:ems="7"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

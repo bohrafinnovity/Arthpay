@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.payment.arthpay">
+
+    <queries>
+        <package android:name="org.egram.microatm" />
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:mimeType="image/jpeg" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.hardware.location.gps" />
+
+    <application
+        android:name="com.payment.arthpay.app.AppController"
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme">
+
+        <activity android:name="com.payment.arthpay.activity.CheckStatus"/>
+        <activity android:name="com.payment.arthpay.activity.LogoutConfirmation" />
+        <activity android:name="com.payment.arthpay.activity.ShareReciept" />
+        <activity
+            android:name="com.payment.arthpay.activity.SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.payment.arthpay.activity.Signup">
+
+        </activity>
+
+        <activity
+            android:name="com.payment.arthpay.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.KYCStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.ContactUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.UpdatePassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.UpdatePin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.DTHRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.MobileRecharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.GasBill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.LandLine"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.WaterBill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.OurServices"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.DMT"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.ElectricBill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.OperatorList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.TransactionReciept"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.SenderDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.AddBenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.SavedBenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.moneyTransfer.ecoDMT.EcoTransaction"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.Statement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.TransactionReports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.DMTStatement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.ReportsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.AEPSRequests"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.WalletRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.WalletREquestReport.WalletRequestsReports"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.pancards.PanCardStatement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.pancards.PanCard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.AepsWalletRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.SiteView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.moneyTransfer.ecoDMT.Echo_SenderDetailActivity"
+            android:label="Sender Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.payment.arthpay.moneyTransfer.ecoDMT.Echo_SenderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.activity.MicoAtmWalletRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.printer.Invoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.RechargePlans.ViewPlans"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.payment.arthpay.newServices.BillActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.bppsServices.OperatorListNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.bppsServices.FetchBill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.payment.arthpay.bppsServices.BillActivityNew"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.payment.arthpay.activity.McroAtmSettleReport" />
+        <activity android:name="com.payment.arthpay.moneyTransfer.mDMT.SenderDetailActivity" />
+        <activity android:name="com.payment.arthpay.moneyTransfer.mDMT.MSenderActivity" />
+        <activity android:name="com.payment.arthpay.moneyTransfer.mDMT.operastor.MOperatorList" />
+        <activity android:name="com.payment.arthpay.moneyTransfer.mDMT.MTransaction" />
+        <activity android:name="com.payment.arthpay.reports.AEPSFundRequest" />
+        <activity android:name="com.payment.arthpay.reports.AEPSTransaction" />
+        <activity android:name="com.payment.arthpay.reports.AepsWalletStatement" />
+        <activity android:name="com.payment.arthpay.reports.AllReports" />
+        <activity android:name="com.payment.arthpay.reports.BillRechargeTransaction" />
+        <activity android:name="com.payment.arthpay.reports.DMTTransactionReport" />
+        <activity android:name="com.payment.arthpay.reports.FilterView" />
+        <activity android:name="com.payment.arthpay.reports.status.CheckStatus" />
+        <activity android:name="com.payment.arthpay.reports.invoice.ReportInvoice" />
+        <activity android:name="com.payment.arthpay.reports.MainWalletFundReqStatement" />
+        <activity android:name="com.payment.arthpay.reports.MATMFundRequest" />
+        <activity android:name="com.payment.arthpay.reports.WalletStatement" />
+        <activity android:name="com.payment.arthpay.commission.CommissionDataList" />
+        <activity android:name="com.payment.arthpay.commission.CommissionList" />
+        <activity android:name="com.payment.arthpay.activity.PinReset" />
+        <activity android:name="com.payment.arthpay.member.AddMember" />
+        <activity android:name="com.payment.arthpay.member.MemberListAll" />
+        <activity android:name=".moneyTransfer.mDMT.DMTTransaction" />
+        <activity android:name=".on_boarding.UploadDocumentActivity" />
+        <activity android:name=".on_boarding.OnBoardingActivity" />
+        <activity android:name=".on_boarding.select_state_district.SearchWithListActivity" />
+
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="firebase_performance_logcat_enabled"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/abc_vector_test" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+
+    </application>
+
+</manifest>
