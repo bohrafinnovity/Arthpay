@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="adharpay">#D52736</color>
+    <color name="airtelText">#009688</color>
+    <color name="bhartgray">#6C727A</color>
+    <color name="bitBlack">#c6c3c6</color>
+    <color name="bitGreen">#afbcd4</color>
+    <color name="black1">#000000</color>
+    <color name="blue1">#28166f</color>
+    <color name="blue_bhart">#343352</color>
+    <color name="centerOrange1">#fa5e5e</color>
+    <color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark1">#e30f54cc</color>
+    <color name="color_new_blue">#100245</color>
+    <color name="colornewblue">#0F1A5F</color>
+    <color name="darkGreen1">#54228a52</color>
+    <color name="darkGreen2">#228a52</color>
+    <color name="darkTimeout">#137A81</color>
+    <color name="defaultColor">#fcfbfb</color>
+    <color name="greeneministatement">#16906C</color>
+    <color name="iciciColor1">#005B75</color>
+    <color name="iciciColor2">#B02A30</color>
+    <color name="kotakBlue1">#003874</color>
+    <color name="kotakRed1">#ED1C24</color>
+    <color name="kotakRedDisable">#b1ed1c4d</color>
+    <color name="lightBlack">#393739</color>
+    <color name="lightDarkGreen">#43af75</color>
+    <color name="lightRed">#f53138</color>
+    <color name="lightWhite">#fdfdfd</color>
+    <color name="littleMoreBlack">#c2c0c2</color>
+    <color name="littleblack">#f7f6f6</color>
+    <color name="myWindowBackground">#DFDFDF</color>
+    <color name="onselect">#0e4ba7</color>
+    <color name="orangeministatement">#C84E0C</color>
+    <color name="paygreen">#0AA20A</color>
+    <color name="purpleministatement">#353560</color>
+    <color name="red1">#ff0b13</color>
+    <color name="resend_otp">#fbbc05</color>
+    <color name="resend_otp1">#54fbbc05</color>
+    <color name="snackBarColor1">#ec6b43</color>
+    <color name="spinnerColor">#e5e5e5</color>
+    <color name="transp">#00ff00ff</color>
+    <color name="transpD">#55000000</color>
+    <color name="transp_black">#81000000</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#ffff00</color>
+    <color name="yellow_dark">#ffd700</color>
+    <dimen name="AddFund_Button_Margin">4dp</dimen>
+    <dimen name="Common_Padding_Left">14dp</dimen>
+    <dimen name="Common_text_size">16sp</dimen>
+    <dimen name="aeps_detail_padding">1dp</dimen>
+    <dimen name="aeps_detail_text_size">10sp</dimen>
+    <dimen name="aeps_image_height">25dp</dimen>
+    <dimen name="aeps_image_width">25dp</dimen>
+    <dimen name="aeps_reg_padding_left">10dp</dimen>
+    <dimen name="aeps_sb_rd_text">12sp</dimen>
+    <dimen name="airtel_button_width">120dp</dimen>
+    <dimen name="amount_other_text_size">15sp</dimen>
+    <dimen name="amount_text_size">20sp</dimen>
+    <dimen name="amount_title_text_size">15sp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="back_arrow_height">22dp</dimen>
+    <dimen name="back_arrow_width">30dp</dimen>
+    <dimen name="barcode_height">30dp</dimen>
+    <dimen name="barcode_width">30dp</dimen>
+    <dimen name="bbps_margin_bottom">8dp</dimen>
+    <dimen name="bbps_margin_top">12dp</dimen>
+    <dimen name="common_text_size">18sp</dimen>
+    <dimen name="down_arrow_bottom_padding">10dp</dimen>
+    <dimen name="down_arrow_height">10dp</dimen>
+    <dimen name="down_arrow_left_padding">10dp</dimen>
+    <dimen name="down_arrow_right_padding">20dp</dimen>
+    <dimen name="down_arrow_top_padding">10dp</dimen>
+    <dimen name="down_arrow_width">10dp</dimen>
+    <dimen name="last_five_detail_text">11sp</dimen>
+    <dimen name="main_card_margin_top">5dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="number_width">30dp</dimen>
+    <dimen name="otp_width">38dp</dimen>
+    <dimen name="policy_icon_height">50dp</dimen>
+    <dimen name="policy_icon_width">50dp</dimen>
+    <dimen name="text_size">10sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="wallet_amount_size">14sp</dimen>
+    <dimen name="wallet_text_size">14sp</dimen>
+    <string name="Airtel_constent_string">I as a BC Agent to Mahagram Payment agree to use my own Aadhaar to avail AEPS Services.Airtel Payments Bank has informed me that my Aadhaar number will be stored with Airtel Payments Bank and used for login Authentication for AEPS services .Mahagram Payment and Airtel Payments Bank has informed me that my Biometrics will not be stored”</string>
+    <string name="ConsentKyc">For aforesaid purpose I hereby state &amp; undertake that I have no objection and hereby voluntarily at my own discretion give consent and authorise Bank to use my Aadhaar details to complete the KYC process.</string>
+    <string name="Rs">\u20B9</string>
+    <string name="aadhardetails">Please give your\naadhaar card details</string>
+    <string name="aadharnoenter">Enter Aadhaar Card Number</string>
+    <string name="aepsbridge">We never store your Aadhaar number in any form neither we share aadhaar or account related details to anyone. Under RBI guidelines BC we are permitted to capture your aadhaar number to complete your banking transaction through AEPS bridge.</string>
+    <string name="app_name">aepslib</string>
+    <string name="consent_string">I willingly submit my aadhaar and give an electronic consent and authorization to Equitas Small Finance Bank to use my Aadhaar number / biometrics for authentication with UIDAI &amp; download my e-KYC details from UIDAI</string>
+    <string name="flash_text_1">Your Aeps Status Is Pending For Final\nApproval!</string>
+    <string name="flash_text_2">If you require assistance please contact \nthe support team who will be happy to help.</string>
+    <string name="icici_consentString">I hereby confirm that Direct Benefits Transfer (DBT)/subsidies granted by the Government is received by me into the bank account. I carry out transactions through Business Correspondents of banks for withdrawal of money from my account/s and also for enquiry of balance under my account. I am submitting my Aadhaar details voluntarily to you for authentication purpose using my Aadhaar number/biometrics with UIDAI for the aforesaid purposes through AEPS.</string>
+    <string name="kotak_consentString">Service: AEPS\n
+Customer Clause:\n
+a.	I, the Customer, hereby authorize Kotak Mahindra Bank Limited (“Bank”) to obtain and store my Aadhaar number, name and biometrics to fetch, authenticate and store all such necessary details retrieved or to be retrieved from Unique Identification Authority of India (“UIDAI”) for the purpose of this transaction through Aadhaar enabled payment system (“AEPS”). In case of any discrepancies, the Bank reserves the sole right to block my account (if the same is with the Bank) and transaction without any further notice or intimation.\n
+b.  Customer hereby states and undertake that it has no objection, if the information disclosed to the Bank is authenticated vide Aadhaar based system. Customer hereby voluntarily agrees and confirms to provide or disclose (as required under the Aadhaar Act 2016 and regulations framed there under, as amended from time to time) his/her identification information i.e. Aadhaar number, biometric information and demographic information for Aadhaar based authentication system and/or such similar authentication mechanism as provided or stipulated by the Government, from time to time, for the purpose of availing banking services, including operations of account or any other facility relating to banking operations.\n
+c.  The Customer hereby agrees and confirms that the Bank will not be obliged to process any request/transaction made by him/her, if:\n
+i.	Aadhaar number provided by the Customer is incorrect.\n
+ii.	 Details in account does not match with details available with UIDAI.\n
+iii. Authentication from UIDAI cannot be completed for any reason whatsoever.\n
+iv.	 Failure or malfunction of any telecommunication and information technology.\n
+v.	 Decline or timeout of the transaction.\n
+d.  The Customer hereby agrees and confirms that his/her account may be used for receiving any government payments across schemes that the Customer is eligible and/ or any other payment using the Aadhaar based information.\n
+e.  The Customer hereby confirms that the Aadhaar detail provided by the Customer is true, correct and complete in all aspect.\n
+g.  The Customer hereby acknowledges that the Bank will not have any liability or responsibility, if the details provided by the Customer is or subsequently becomes false, incorrect or incomplete, either in part or as a whole.\n
+h.  Before agreeing to the above-mentioned terms and conditions, the Customer have been explained (in a language known to the Customer) about the nature of information that may be shared upon authentication and have understood the nature and implication of the same, as stipulated under the applicable law. The Customer declares that all the information has been voluntarily furnished by them to the Bank, without any duress or coercion.\n
+i.  The Customer hereby gives consent to the Bank to use/exchange or share their Aadhaar number, Aadhaar information for registration of client information with Exchange, KRA, CERSAI and with any other regulatory or statutory authorities or as the Bank deems fit or as per requirements of law.\n
+j.  The Customer hereby understands and agrees that all the information provided by the Customer to the BC and the Bank will only be used for the purpose of the transaction through AEPS, or as per requirements of law.\n
+k.  The Customer hereby understands and agrees that Bank may disclose the identity information provided by the Customer to only UIDAI Central Identities Data Repository (“CIDR”) through NPCI for the purpose of authentication or authorization and in order to receive a Yes/No response for the authentication request.\n
+I.  The Customer hereby understands that Aadhaar Number is necessary to perform AEPS transaction and he/she may visit any bank to avail any other banking services.\n
+J.  The Customer hereby understands and agrees that the biometric authentication may be treated as his/her signature.\n
+K.  The Customer hereby declares that the above information has been provided voluntarily out of his/her own discretion and volition. All information provided by the Customer or information/date retrieved from UIDAI in respect of the Customer is true, correct, updated and complete.\n
+\n
+Agent Clause:\n
+a.  I hereby confirm that the Customer has been explained (in a language know to the Customer) about the nature of information, sharing of such information upon authentication, aspects of the transaction and the terms and conditions applicable to this transaction and the Customer has understood and authorized Kotak Mahindra Bank Ltd to fetch applicable data from UIDAI;\n
+b.  I hereby confirm that the Customer has provided all the information voluntarily to the Bank and are true, correct and complete.\n
+
+    </string>
+    <string name="makuesureaadha">Make sure your Aadhar is linked with the bank account</string>
+    <string name="o_no_np_ns">O\nO\nP\nS!</string>
+    <string name="otp_message">OTP has been sent to you on your mobile number. please enter it below.</string>
+    <string name="scan">Scan &amp; Verify</string>
+    <string name="selectbank">Select Your Bank Account</string>
+    <string name="something_went_wrong">Something\nWent Wrong</string>
+    <string name="spinnerBank">Bank</string>
+    <string name="spinnerDevice">Device</string>
+    <string name="withdrawamount">Enter Withdraw Amount</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <item name="colorPrimaryDark">@color/lightWhite</item>
+        <item name="colorAccent">@color/blue1</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowLightStatusBar" ns1:targetApi="m">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/blue1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="AppThemess" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="otpViewStyle">@style/OtpWidget.OtpView</item>
+    </style>
+    <style name="NegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+    <style name="NumberPickerStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorPrimary">@color/transpD</item>
+        <item name="android:colorControlNormal" ns1:targetApi="lollipop">@color/transpD</item>
+    </style>
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+    <style name="alertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/blue1</item>
+        <item name="android:buttonBarNegativeButtonStyle" ns1:targetApi="lollipop">@style/NegativeButtonStyle</item>
+        <item name="android:buttonBarPositiveButtonStyle" ns1:targetApi="lollipop">@style/PositiveButtonStyle</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+
+    </style>
+    <style name="pauseTransaction" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <item name="colorPrimaryDark">@color/lightDarkGreen</item>
+        <item name="colorAccent">@color/yellow</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="sdf" parent="Theme.AppCompat.Light"/>
+    <style name="wrongTransaction" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary1</item>
+        <item name="colorPrimaryDark">@color/lightDarkGreen</item>
+        <item name="colorAccent">@color/red1</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

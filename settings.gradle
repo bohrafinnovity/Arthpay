@@ -1,3 +1,4 @@
 include ':mahagram-sdk_1.1.3'
 include ':app'
+include ':onboarding'
 rootProject.name='arthpay'

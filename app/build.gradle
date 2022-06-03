@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
-    buildToolsVersion "29.0.3"
+    compileSdkVersion 32
+    buildToolsVersion "30.0.3"
     defaultConfig {
         applicationId "com.payment.arthpay"
         minSdkVersion 19
-        targetSdkVersion 30
+        targetSdkVersion 32
         versionCode 6
         versionName "1.5"
         multiDexEnabled true
@@ -93,8 +93,7 @@ dependencies {
     implementation "com.airbnb.android:lottie:3.4.0"
     implementation 'com.github.ybq:Android-SpinKit:1.4.0'
 
-    // aeps dependencies
-    implementation project(path: ':mahagram-sdk_1.1.3')
+
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
@@ -113,4 +112,17 @@ dependencies {
     implementation 'io.sentry:sentry-android:5.1.2'
     implementation "android.arch.persistence.room:runtime:1.1.1"
     annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+
+    implementation project(path: ':onboarding')
+    implementation project(path: ':mahagram-sdk_1.1.3')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    implementation "io.reactivex.rxjava2:rxandroid:2.0.1"
+    implementation "com.karumi:dexter:5.0.0"
+    implementation 'com.github.yalantis:ucrop:2.2.6-native'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
 }

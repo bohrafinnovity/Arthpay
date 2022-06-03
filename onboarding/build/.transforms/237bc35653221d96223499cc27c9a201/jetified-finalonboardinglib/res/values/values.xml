@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="_230dp">230dp</dimen>
+    <dimen name="_35dp">35dp</dimen>
+    <dimen name="_45dp">25dp</dimen>
+    <dimen name="eighteensp">18sp</dimen>
+    <dimen name="fiftendp">15dp</dimen>
+    <dimen name="fivedp">5dp</dimen>
+    <dimen name="fourteensp">14sp</dimen>
+    <dimen name="tendp">10dp</dimen>
+    <dimen name="twentydp">25dp</dimen>
+    <dimen name="twentyfive">25dp</dimen>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="version_name">V:1.0.9</string>
+    <style name="CameraTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/design_default_color_primary</item>
+        <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+        <item name="colorAccent">@color/design_default_color_primary</item>
+    </style>
+</resources>

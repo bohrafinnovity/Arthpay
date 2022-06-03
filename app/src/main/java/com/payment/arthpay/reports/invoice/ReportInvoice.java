@@ -49,7 +49,7 @@ public class ReportInvoice extends AppCompatActivity implements View.OnClickList
         imgTxnStatus = findViewById(R.id.imgTxnStatus);
         tvTxnStatus = findViewById(R.id.tvTxnStatus);
         setLis();
-        permissionCheck();
+
         setupToolBar();
     }
 
@@ -140,19 +140,10 @@ public class ReportInvoice extends AppCompatActivity implements View.OnClickList
     }
 
     public final void l() {
-        if (Build.VERSION.SDK_INT >= 23 && this.checkSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE") != PackageManager.PERMISSION_GRANTED
-                && this.checkSelfPermission("android.permission.READ_EXTERNAL_STORAGE") != PackageManager.PERMISSION_GRANTED) {
-            this.requestPermissions(new String[]{"android.permission.WRITE_EXTERNAL_STORAGE"}, 1);
-        } else
-            new wd().NUL(this.invoiceCon, this.context);
+        new wd().NUL(this.invoiceCon, this.context);
+
     }
 
-    public final void permissionCheck() {
-        if (Build.VERSION.SDK_INT >= 23 && this.checkSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE") != PackageManager.PERMISSION_GRANTED
-                && this.checkSelfPermission("android.permission.READ_EXTERNAL_STORAGE") != PackageManager.PERMISSION_GRANTED) {
-            this.requestPermissions(new String[]{"android.permission.WRITE_EXTERNAL_STORAGE"}, 1);
-        }
-    }
 
     public final void k() {
         for (InvoiceModel m : Constents.INVOICE_DATA) {

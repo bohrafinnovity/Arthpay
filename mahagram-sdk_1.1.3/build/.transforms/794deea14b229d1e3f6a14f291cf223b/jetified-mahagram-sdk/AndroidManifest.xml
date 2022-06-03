@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.egram.aepslib"
+    android:versionCode="1"
+    android:versionName="1.1.2" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="30" />
+
+    <queries>
+        <package android:name="com.mantra.rdservice" />
+        <package android:name="com.acpl.registersdk" />
+        <package android:name="com.tatvik.bio.tmf20" />
+        <package android:name="com.secugen.rdservice" />
+        <package android:name="com.scl.rdservice" />
+        <package android:name="com.evolute.rdservice" />
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- <uses-permission android:name="android.permission.VIBRATE" /> -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="false" />
+
+    <application android:theme="@style/AppTheme" >
+        <activity
+            android:name="org.egram.aepslib.aeps.KotakMiniStatement"
+            android:exported="false" />
+        <activity
+            android:name="org.egram.aepslib.aeps.verification.AadhaarValidationbio"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.CashDeposite.IciciCashDepostieRecepit"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.CashDeposite.IciciCashDepositeOtpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.CashDeposite.IciciCashDepositActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.AirtelBankSelectionacitiy"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.egram.aepslib.aeps.airtelaeps.AirtelScanverifyactivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.airtelaeps.AirtelOtpscreenactivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.airtelaeps.AirtelMiniStatement"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.egram.aepslib.aeps.airtelaeps.Airtelcashwithdrawlactivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.airtelaeps.Airtelbalanceinquiryactivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.airtelaeps.AirtelAepsReceipt"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="org.egram.aepslib.aeps.Ekyc.CaptureEkycBIometric"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.Ekyc.EnterekycOtpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.Ekyc.AadhaarPanInput"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" /> <!-- <activity android:name=".aeps.Aadharpay.AadharpayRecepitActivity"></activity> -->
+        <!-- <activity android:name=".aeps.Aadharpay.AadhaarpayBankselectionActivity" /> -->
+        <!-- <activity android:name=".aeps.Aadharpay.CustomerRegistrationActivity" /> -->
+        <activity android:name="org.egram.aepslib.aeps.IciciMiniStatement" />
+        <activity android:name="org.egram.aepslib.aeps.ReportRedeemViewActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                tools:replace="android:resource" />
+        </provider>
+
+        <activity android:name="org.egram.aepslib.aeps.IciciKotakAllTxnReceiptActivity" />
+        <activity android:name="org.egram.aepslib.aeps.IciciKotakAllTransaction" />
+        <activity
+            android:name="org.egram.aepslib.DashboardActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.MobileVerActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.MobileVerifyActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.CashWithdrawActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.BalanceInquiryActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.ChangeDeviceRegisterActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.BankSelectionActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.CustomerRegisterActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.OtpTestingActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.iciciAeps.IciciCashWithdrawActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.iciciAeps.IciciBalanceInquiryActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.AepsReceiptActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.iciciAeps.IciciAepsReceiptActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="org.egram.aepslib.aeps.kotakAeps.KotakBalanceInquiryActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.egram.aepslib.aeps.kotakAeps.KotakCashWithdrawActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.egram.aepslib.aeps.kotakAeps.KotakAepsReceiptActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.egram.aepslib.aeps.AgentRegisterSecondActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.egram.aepslib.aeps.Aadharpay.CustomerRegistrationActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.egram.aepslib.aeps.Aadharpay.AadhaarpayBankselectionActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="org.egram.aepslib.aeps.Aadharpay.AadharpayRecepitActivity"
+            android:configChanges="screenSize|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://49167e78ee0546e6b4c4a3ec1ae5aedb@o982526.ingest.sentry.io/5944487" />
+        <meta-data
+            android:name="io.sentry.traces.sample-rate"
+            android:value="1.0" />
+        <meta-data
+            android:name="io.sentry.traces.activity.enable"
+            android:value="true" />
+        <meta-data
+            android:name="io.sentry.traces.activity.auto-finish.enable"
+            android:value="true" />
+    </application>
+
+</manifest>

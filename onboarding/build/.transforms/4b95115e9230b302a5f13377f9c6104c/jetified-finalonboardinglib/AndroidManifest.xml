@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.paysprint.onboardinglib" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <queries>
+        <package android:name="com.mantra.rdservice" />
+        <package android:name="com.scl.rdservice" />
+        <package android:name="com.precision.pb510.rdservice" />
+        <package android:name="com.secugen.rdservice" />
+        <package android:name="com.nextbiometrics.onetouchrdservice" />
+        <package android:name="com.acpl.registersdk" />
+        <package android:name="co.aratek.asix_gms.rdservice" />
+        <package android:name="com.evolute.rdservice" />
+        <package android:name="com.mantra.mis100v2.rdservice" />
+    </queries>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.READ_PRECISE_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"
+        tools:ignore="ScopedStorage" />
+
+    <application android:requestLegacyExternalStorage="true" >
+        <activity android:name="com.paysprint.onboardinglib.activities.AadhaarVerification" />
+        <activity
+            android:name="com.paysprint.onboardinglib.activities.PanImageUpload"
+            android:screenOrientation="userPortrait" />
+        <activity android:name="com.paysprint.onboardinglib.activities.AddressUpdateActivity" />
+        <activity android:name="com.paysprint.onboardinglib.activities.AadhaarEKYCActivity" />
+        <activity android:name="com.paysprint.onboardinglib.activities.AadhaarVerificationActivity" />
+        <activity android:name="com.paysprint.onboardinglib.activities.PanImageActivity" />
+        <activity android:name="com.paysprint.onboardinglib.activities.PanActivity" />
+        <activity android:name="com.paysprint.onboardinglib.activities.HostActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.captureimage.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

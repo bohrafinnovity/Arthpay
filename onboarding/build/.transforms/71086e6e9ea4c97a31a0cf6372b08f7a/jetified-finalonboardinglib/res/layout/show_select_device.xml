@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/tendp"
+    android:layout_marginTop="@dimen/_45dp"
+    android:layout_marginEnd="@dimen/tendp"
+    app:cardCornerRadius="@dimen/fivedp"
+    android:elevation="10dp"
+    app:cardElevation="10dp"
+    app:cardBackgroundColor="#FFF"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textView">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/fivedp"
+            android:layout_marginBottom="@dimen/fivedp"
+            android:layout_marginTop="@dimen/fivedp"
+            android:layout_marginRight="@dimen/fivedp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/deviceShowLayout"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="#000"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fivedp"
+                android:text="Please select a device which you want to complete your KYC and click Capture button"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fiftendp"
+                android:text="Supported Devices"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/mantra_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/mantra_icon"
+                        android:visibility="invisible"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Mantra"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/morpho_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/morpho_icon"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:visibility="invisible"
+                        android:layout_gravity="center"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Morpho"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/precision_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/precision_icon"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:visibility="invisible"
+                        android:layout_gravity="center"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Precision"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/secugen_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/secugen_icon"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:visibility="invisible"
+                        android:layout_gravity="center"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Secugen"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nextBiomatrx_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/next_icon"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Next Biometrics"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/startek_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/startek_icon"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Startek"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aratek_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/aratek_icon"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Aratek"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mantraIris_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/tendp"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/tendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/iris_icon"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Mantra Iris"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/evolute_Container"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/twentyfive"
+                android:layout_marginLeft="@dimen/fivedp"
+                android:layout_marginTop="@dimen/fiftendp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="@dimen/twentyfive"
+                    android:layout_height="@dimen/twentyfive"
+                    android:layout_gravity="center"
+                    android:background="@drawable/live_bk_white_100_120"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:id="@+id/evolute_icon"
+                        android:orientation="vertical"
+                        android:layout_width="@dimen/tendp"
+                        android:layout_height="@dimen/tendp"
+                        android:layout_gravity="center"
+                        android:visibility="invisible"
+                        android:background="@drawable/inner_circle_grey"
+                        android:gravity="center">
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Evolution"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginRight="@dimen/tendp"
+                    android:layout_marginLeft="@dimen/tendp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="@dimen/fivedp"
+                app:layout_constraintTop_toBottomOf="@+id/etAadhaarNumber"
+                android:layout_marginRight="@dimen/fivedp"
+                android:layout_marginBottom="@dimen/tendp">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="I, undersigned, the holder of the AADHAAR Number\nhereby give my consent to obtain my Aadhaar Number and biometrics for authentication with Unique Identification Authority of India (UIDAI) informed me that my identity information will be user only for AEPS (Aadhaar Enabled Payment System) Balance Enquiry purpose that my biometrics will not be stored/shared by and will be submitted to Central Identity Data Repository (CIDR) only for purpose of authenticating my identity."
+                    android:textColor="#6A6767"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/captureBtn"
+                android:layout_width="match_parent"
+                android:textColor="#FFF"
+                android:text="Capture"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+                android:backgroundTint="@color/design_default_color_primary"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

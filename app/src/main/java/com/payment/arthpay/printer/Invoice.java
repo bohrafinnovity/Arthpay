@@ -240,11 +240,8 @@ public class Invoice extends AppCompatActivity {
     }
 
     public final void l() {
-        if (Build.VERSION.SDK_INT >= 23 && this.checkSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE") != PackageManager.PERMISSION_GRANTED
-                && this.checkSelfPermission("android.permission.READ_EXTERNAL_STORAGE") != PackageManager.PERMISSION_GRANTED) {
-            this.requestPermissions(new String[]{"android.permission.WRITE_EXTERNAL_STORAGE"}, 1);
-        } else
-            new wd().NUL(this.scrollView, this.context);
+        new wd().NUL(this.scrollView, this.context);
+
     }
 
     public final void k(MicroATMModel model) {

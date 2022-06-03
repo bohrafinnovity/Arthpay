@@ -97,15 +97,12 @@ public class MainActivity extends AppCompatActivity {
     @RequiresApi(api = Build.VERSION_CODES.M)
     private void requestPermission() {
         int accessCourseLocation = checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION);
-        int writeExternalStorage = checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         int readPhoneState = checkSelfPermission(Manifest.permission.READ_PHONE_STATE);
         List<String> permissions = new ArrayList<>();
         if (accessCourseLocation != PackageManager.PERMISSION_GRANTED) {
             permissions.add(Manifest.permission.ACCESS_FINE_LOCATION);
         }
-        if (writeExternalStorage != PackageManager.PERMISSION_GRANTED) {
-            permissions.add(Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        }
+
         if (readPhoneState != PackageManager.PERMISSION_GRANTED) {
             permissions.add(Manifest.permission.READ_PHONE_STATE);
         }

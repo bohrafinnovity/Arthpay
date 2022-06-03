@@ -273,11 +273,7 @@ public class ShareReciept extends AppCompatActivity {
     }
 
     public final void l() {
-        if (Build.VERSION.SDK_INT >= 23 && this.checkSelfPermission("android.permission.WRITE_EXTERNAL_STORAGE") != PackageManager.PERMISSION_GRANTED
-                && this.checkSelfPermission("android.permission.READ_EXTERNAL_STORAGE") != PackageManager.PERMISSION_GRANTED) {
-            this.requestPermissions(new String[]{"android.permission.WRITE_EXTERNAL_STORAGE"}, 1);
-        } else
-            new wd().NUL(this.scrollView, this);
+        new wd().NUL(this.scrollView, this);
     }
     private void setInitial(ReciptModel reciptModel,int dataCount){
 

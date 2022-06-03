@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ParentLayout"
+    tools:context=".aeps.Aadharpay.CustomerRegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_pay_adhar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="AadhaarPay"
+            android:textColor="@color/black1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:text="Accept payments digitally\nusing Aadhaar"
+            android:textColor="@color/black1"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="49dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/seek_bar" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsbold"
+            android:text="Enter customer mobile number"
+            android:textColor="@color/black1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edit_mobile_verify"
+            android:layout_width="269dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_background"
+            android:fontFamily="@font/poppinsbold"
+            android:gravity="center"
+            android:inputType="number"
+            android:maxLength="12"
+            android:textColor="@color/black1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="We respect your privacy"
+            android:textColor="@color/black1"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_proceed"
+            android:layout_width="138dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/adharpay"
+            android:paddingStart="25dp"
+            android:paddingEnd="25dp"
+            android:text="Proceed"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppinsbold"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

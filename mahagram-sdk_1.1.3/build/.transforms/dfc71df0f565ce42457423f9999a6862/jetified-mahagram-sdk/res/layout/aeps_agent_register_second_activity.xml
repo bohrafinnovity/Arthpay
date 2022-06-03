@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/titlebar"
+        layout="@layout/titlebar_blank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_agentSubmit"
+        android:layout_below="@+id/titlebar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="5dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="KYC Documents"
+                        android:textColor="@color/black1"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Aadhaar Front"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/IdentityLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp">
+
+                            <ImageView
+                                android:id="@+id/IdentityImage"
+                                android:layout_width="@dimen/aeps_image_width"
+                                android:layout_height="@dimen/aeps_image_height"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_identityUpload"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:text="Choose File"
+                                android:textColor="@color/black1"
+                                android:textSize="@dimen/text_size16" />
+
+                            <include
+                                android:id="@+id/IdentityProgressBar"
+                                layout="@layout/progress_bar"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/IdentityProofImageView"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/hotel_booked_success"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/transp_black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Aadhaar Back"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/AddressLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="4dp">
+
+
+                            <ImageView
+                                android:id="@+id/AddressImage"
+                                android:layout_width="@dimen/aeps_image_width"
+                                android:layout_height="@dimen/aeps_image_height"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_addressUpload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:text="Choose File"
+                                android:textColor="@color/black1"
+                                android:textSize="@dimen/text_size16" />
+
+                            <include
+                                android:id="@+id/addressProgressBar"
+                                layout="@layout/progress_bar"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/AddressProofImageView"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/hotel_booked_success"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/transp_black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text="PAN Photo"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ShopLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginRight="4dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/ShopImage"
+                                android:layout_width="@dimen/aeps_image_width"
+                                android:layout_height="@dimen/aeps_image_height"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_shopPhoto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:text="Choose File"
+                                android:textColor="@color/black1"
+                                android:textSize="@dimen/text_size16" />
+
+                            <include
+                                android:id="@+id/shopImageProgressBar"
+                                layout="@layout/progress_bar"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/ShopProofImageView"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/hotel_booked_success"
+                                android:visibility="gone" />
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/transp_black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Passport Size Photo"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:id="@+id/PassportImageLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <ImageView
+                                android:id="@+id/PassportSizeImage"
+                                android:layout_width="@dimen/aeps_image_width"
+                                android:layout_height="@dimen/aeps_image_height"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/tv_passportPhoto"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:text="Choose File"
+                                android:textColor="@color/black1"
+                                android:textSize="@dimen/text_size16" />
+
+                            <include
+                                android:id="@+id/passportImagePrgressbar"
+                                layout="@layout/progress_bar"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:visibility="gone" />
+
+                            <ImageView
+                                android:id="@+id/PassportSizeImageView"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/hotel_booked_success"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="5dp"
+                            android:background="@color/transp_black" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_agentSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/blue1"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/common_text_size" />
+
+</RelativeLayout>

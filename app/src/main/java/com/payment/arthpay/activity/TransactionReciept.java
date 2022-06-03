@@ -116,21 +116,7 @@ public class TransactionReciept extends AppCompatActivity {
         }
     }
 
-    public boolean mCheckWriteStorage() {
-        int result = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        if (result == PackageManager.PERMISSION_GRANTED) {
-            return true;
-        } else {
-            return false;
-        }
-    }
 
-    private void mRequestWriteStorage() {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-        } else {
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
-        }
-    }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
